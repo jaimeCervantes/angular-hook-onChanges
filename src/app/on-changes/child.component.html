@@ -1,0 +1,10 @@
+<div class="persona">
+  <h4>Componente hijo</h4>
+  <p>{{persona.name}} puede {{power}}</p>
+  <p>{{persona.name}} {{habilidad}}</p>
+  <input type="text" [(ngModel)]="edad">
+  <input type="text" [(ngModel)]="habilidad">
+  <p>edad: {{edad}}</p>
+  <h4>-- Mensajes cuando se ejectuta el hook onChanges --</h4>
+  <div *ngFor="let chg of changeLog">{{chg}}</div>
+</div>
